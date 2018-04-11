@@ -27,3 +27,34 @@ function cancelComment() {
     hideCommentForm();
 }
 
+/**
+ *
+ * @param Photo
+ *
+ * Cambia la resolucion de una foto desde 120x120 a 800x600 (pixeles)
+ * y luego llama a name(Photo) para que agregue el nombre del articulo
+ * y la descripcion.
+ */
+
+function resize(Photo) {
+    var newSize = "800";
+    var aux = Photo.src;
+    var aux = aux.replace("120", newSize);
+    Photo.src = aux;
+
+    var newWidth = "800px";
+    var newHeigth = "600px";
+    Photo.style.width = newWidth;
+    Photo.style.height = newHeigth;
+
+    var index = Photo.id.indexOf("_");
+    var namePhoto = Photo.id.slice(0, index);
+    name(namePhoto);
+}
+
+
+function name(MouseX) {
+    document.getElementById(MouseX).innerHTML = "Mouse Inalámbrico <br> Mouse Logitech con 2 años de uso, funcionando sin detalles. Se entrega con PadMouse.<br><br>";
+}
+
+

@@ -1,26 +1,44 @@
 body{
-    background: sandybrown;
+    background: white;
     text-align: center;
+
 }
 h1{
+    color: black;
+
 
 }
 h2{
+    color: black;
 
 }
 table{
+    color: black;
 
 }
 
 textarea{
     width: 400px;
     height: 100px;
+    color: black;
 }
 form{
     text-align: center;
+    color: black;
 }
 
 
 p{
     text-align: center;
+    color: black;
 }
+
+button{
+    color: black;
+}
+
+input{
+    color: black;
+
+}
+
