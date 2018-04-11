@@ -52,7 +52,6 @@ function resize(Photo) {
     name(namePhoto);
 }
 
-
 function name(MouseX) {
     document.getElementById(MouseX).innerHTML = "Mouse Inalámbrico <br> Mouse Logitech con 2 años de uso, funcionando sin detalles. Se entrega con PadMouse.<br><br>";
 }

@@ -22,9 +22,6 @@ function FormValidation(CheckName, CheckDescription, CheckPhotos, CheckRegionCom
     if (CheckName && CheckDescription && CheckPhotos && CheckStreetNumber && CheckRegionComuna && CheckContactName && CheckEmail && CheckPhone){
         window.location.assign("InitPage.html");
     }
-    else {
-        alert("Uno o más campos ingresados contienen errores")
-    }
 }
 
 
@@ -182,7 +179,7 @@ function StreetNumberValidation() {
     var bIsAlphaNumeric = LatinTextValidation(sStreetNumberInput) && NumText(sStreetNumberInput);
 
     if (!bIsAlphaNumeric){
-        alert("La Calle y el Número no son válidos!")
+        alert("La Calle y/o el Número no son válidos!")
     }
     return bIsAlphaNumeric
 }
