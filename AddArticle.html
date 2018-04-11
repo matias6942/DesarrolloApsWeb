@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--<script src="jquery-3.3.1.min.js"></script>-->
+    <link rel="stylesheet" href="BlackGreenStyleSheet.css">
+    <meta charset="UTF-8">
+    <title>Reciclaje - Agregar</title>
+</head>
+<body>
+<script src="ValidationScripts.js"></script>
+<h1>Ingrese un Nuevo Artículo</h1>
+
+<form name="AddArticleForm" onsubmit="FormValidation(NameValidation(),DescriptionValidation(),ValidatePhoto(), StreetNumberValidation(), ValidateSelection(), ValidateContactName(), ValidateEmail(), ValidatePhone()); return false">
+
+    Nombre del Artículo:<br>
+    <input name="nombre-articulo" id="nombre-articulo" type="text" size="40" maxlength="80" minlength="2"><br><br>
+
+    Descripción:<br>
+    <textarea name="descripcion-articulo" rows="200" cols="300" maxlength="1000"></textarea><br><br>
+
+    Fotografías:<br>
+    <input type="file" name="foto-articulo[1]" accept="image/*"><button onclick="AddNewPhoto(); return false;">Agregar otra Fotografía</button>
+    <input type="file" name="foto-articulo[2]" accept="image/*" style="display: none"><br>
+    <input type="file" name="foto-articulo[3]" accept="image/*" style="display: none"><br>
+    <input type="file" name="foto-articulo[4]" accept="image/*" style="display: none"><br>
+    <input type="file" name="foto-articulo[5]" accept="image/*" style="display: none"><br><br>
+
+    Región y Comuna de Entrega:<br>
+    <select name="region-articulo" id="regiones"></select>
+    <select name="comuna-articulo" id="comunas"></select><br><br>
+
+    Calle y Número:<br>
+    <input name="calle-articulo" type="text" size="60" maxlength="150"><br><br>
+
+    Nombre de Contacto:<br>
+    <input name="nombre-contacto" type="text" size="60" maxlength="200"><br><br>
+
+    Email de Contacto:<br>
+    <input name="email-contacto" type="text" size="40" maxlength="100"><br><br>
+
+    Fono de Contacto:<br>
+    <input name="fono-contacto" type="text" size="20" maxlength="20"><br><br>
+
+    <br><br><input type="submit" value="Ingresar este Artículo"><br><br>
+</form>
+
+
+
+<br>
+<br>
+<a href="InitPage.html">Volver al Menú Principal</a>
+</body>
+</html>
